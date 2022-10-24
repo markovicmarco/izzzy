@@ -1,0 +1,45 @@
+.container {
+    margin-top: 96px;
+    width: 100vw;
+    padding: 0 24px;
+  }
+
+  .card-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    padding: var(--space-4x);
+  }
+  
+  .spacerBottom {
+    margin-bottom: 16px;
+  }
+  
+  .holderItem {
+    min-width: var(--talk-card-width, 18vw);
+    max-width: var(--talk-card-width, 18vw);
+    font-size: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    width: 100%;
+    padding: 18px;
+    margin: 2px;
+    background: var(--sidebar);
+  }
+
+  .holderItem:hover {
+    border: 1px solid #6580cb;
+  }
+
+   /* On mobile: */
+   @media only screen and (max-width: 850px) {
+    .card-body {
+        justify-content: center;
+    }
+    .holderItem {
+        min-width: var(--talk-card-width, 75vw);
+        max-width: var(--talk-card-width, 75vw);
+    }
+  }
+ 

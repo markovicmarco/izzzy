@@ -1,0 +1,181 @@
+.noGapBottom {
+    margin-bottom: 0px;
+  }
+  
+  .mainButton {
+    cursor: pointer;
+    display: inline-flex;
+    appearance: none;
+    align-items: center;
+    -webkit-box-align: center;
+    justify-content: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    line-height: 1.2;
+    font-weight: 500;
+    transition-property: background-color, border-color, color, fill, stroke,
+      opacity, box-shadow, transform;
+    transition-duration: 200ms;
+    height: 3rem;
+    min-width: 3rem;
+    font-size: 15px;
+    background-color: #0e0e10;
+    color: #fff;
+    width: 180px;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid #6580cb;
+  }
+  
+  .mainButton:hover {
+    opacity: 0.8;
+  }
+  
+  .secondaryButton {
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    background: #323332;
+    border: 2px solid #6580cb;
+    border-radius: 8px;
+    padding: 10px 16px;
+    
+  }
+
+  .walletContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 50vm;
+    padding: 0 24px;
+  }
+  
+  .container {
+    margin: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 50vm;
+    padding: 0 24px;
+  }
+  
+  .divider {
+    width: 50%;
+    border-color: grey;
+    opacity: 0.25;
+  }
+  
+  .holderGrid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+    width: 600px;
+    max-width: 95vw;
+    flex-wrap: wrap;
+    margin-top: 16px;
+  }
+  
+  .spacerBottom {
+    margin-bottom: 16px;
+  }
+  
+  .claimGrid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    gap: 2%;
+  }
+  
+  .textInput {
+    width: 75%;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    height: 48px;
+    padding: 0 16px;
+    font-size: 1rem;
+  }
+  
+  .holderItem {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    width: 100%;
+    padding: 16px;
+  }
+
+  .button {
+    border-radius: var(--space-2x);
+    border: none;
+    color: #fff;
+    background: var(--brand);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: var(--text-md);
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    outline: none;
+    transition: background-color 0.2s ease;
+    padding: 0 var(--space-4x);
+    height: 50px;
+    width: 270px;
+    min-width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button:hover,
+  .button:focus {
+    background: black;
+    color: var(--brand);
+    border: 1px solid var(--brand);
+  }
+  
+  /* On mobile: */
+  @media only screen and (max-width: 850px) {
+    .walletContainer {
+      width: 100vw;
+    }
+    .container {
+      margin: 0;
+      margin-top: 20%;
+    }
+    .claimGrid {
+      flex-direction: column;
+      width: 99vw;
+      gap: 2%;
+    }
+  
+    .textInput {
+      width: 75vw;
+      margin-top: 6px;
+      margin-bottom: 8px;
+    }
+
+    .button {
+        width: 75vw;
+    }
+
+    .secondaryButton {
+        font-size: 0.5rem;
+        border-radius: 4.5px;
+    }
+  }
+
+
+  
